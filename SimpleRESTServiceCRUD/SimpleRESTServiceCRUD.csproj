@@ -74,6 +74,10 @@
     <Compile Include="IBookService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Contracts\IBookRepository.cs" />
+    <Compile Include="Repositories\Generics\BookController.cs" />
+    <Compile Include="Repositories\Generics\GenericRepository.cs" />
+    <Compile Include="Repositories\Generics\IGenericRepository.cs" />
+    <Compile Include="Repositories\Generics\IRepository.cs" />
     <Compile Include="Repositories\Implementations\BookRepository.cs" />
   </ItemGroup>
   <ItemGroup>

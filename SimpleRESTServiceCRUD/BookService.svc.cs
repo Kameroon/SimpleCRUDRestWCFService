@@ -15,24 +15,24 @@ namespace SimpleRESTServiceCRUD
 
         public List<Book> GetBookList()
         {
-            return repository.GetAllBooks();
+            return repository.GetAll();
         }    
         
         public Book GetBookById(string id)
         {
-            return repository.GetBookById(int.Parse(id));
+            return repository.GetById(int.Parse(id));
         }
 
         public string AddBook(Book book, string id)
         {
-            Book newBook = repository.AddNewBook(book);
+            Book newBook = repository.AddNew(book);
 
             return "id=" + newBook.BookId;
         }
 
         public string UpdateBook(Book book, string id)
         {
-            bool updated = repository.UpdateABook(book);
+            bool updated = repository.Update(book);
 
             if (updated)
                return "Book with id = " + id + " updated successfully";
@@ -42,7 +42,7 @@ namespace SimpleRESTServiceCRUD
 
         public string DeleteBook(string id)
         {
-            bool deleted = repository.DeleteABook(int.Parse(id));
+            bool deleted = repository.Delete(int.Parse(id));
 
             if (deleted)
                return "Book with id = " + id + " deleted successfully.";
