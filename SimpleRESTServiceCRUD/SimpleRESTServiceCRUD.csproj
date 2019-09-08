@@ -79,6 +79,16 @@
     <Compile Include="Repositories\Generics\IGenericRepository.cs" />
     <Compile Include="Repositories\Generics\IRepository.cs" />
     <Compile Include="Repositories\Implementations\BookRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\AuthorsRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\Course.cs" />
+    <Compile Include="Repositories\RepositoryPattern\CourseRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\IAuthorsRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\ICourseRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\IRepository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\IUnitOfWork.cs" />
+    <Compile Include="Repositories\RepositoryPattern\Repository.cs" />
+    <Compile Include="Repositories\RepositoryPattern\UnitOfWork.cs" />
+    <Compile Include="Repositories\RepositoryPattern\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
